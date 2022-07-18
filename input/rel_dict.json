@@ -1,0 +1,6 @@
+{
+  "Negative": 0,
+  "Cause_of_disease": 1,
+  "Treatment_of_disease": 2,
+  "Association": 3
+}
