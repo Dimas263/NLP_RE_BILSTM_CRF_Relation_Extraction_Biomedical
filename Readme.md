@@ -6,6 +6,9 @@
 
 ## <img src="https://img.icons8.com/external-fauzidea-flat-fauzidea/64/undefined/external-man-avatar-avatar-fauzidea-flat-fauzidea.png"/> **`Dimas Dwi Putra`**
 
+## Results
+<img src="front-end.png" width="1345">
+
 ## Architecture
 <img src="RE-BILSTM-CRF%20Architecture.png" width="16384">
 
