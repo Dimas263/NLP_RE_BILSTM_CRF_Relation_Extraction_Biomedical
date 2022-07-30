@@ -3,7 +3,7 @@ import json
 import pandas as pd
 from pprint import pprint
 
-df = pd.read_excel('/content/drive/MyDrive/Rearch_Dimas/BILSTM_CRF_RE/input/ori_data/gold-standard-corpus.xlsx')
+df = pd.read_excel('ori_data/gold-standard-corpus.xlsx')
 relations = list(df['relation'].unique())
 relations.remove('Negative')
 relation_dict = {'Negative': 0}
