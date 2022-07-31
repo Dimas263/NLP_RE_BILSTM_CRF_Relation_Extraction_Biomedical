@@ -8,7 +8,7 @@
 
 
 ## Architecture
-<img src="RE-BILSTM-CRF%20Architecture.png" width="9287">
+<img src="RE-BILSTM-CRF.png" width="9287">
 
 ## Dataset
 <img src="RE-DATASET.png" width="4803">
