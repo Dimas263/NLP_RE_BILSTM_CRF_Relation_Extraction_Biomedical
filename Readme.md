@@ -1,6 +1,6 @@
 # <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/undefined/external-big-data-smart-technology-flaticons-lineal-color-flat-icons-2.png"/> **NLP Research**
 
-# **Relation Extraction in Biomedical using BI-LSTM-CRF model + Bert Embedding + Keras + Tensorflow**
+# <img src="https://img.icons8.com/color/64/000000/python--v1.png"/> **Relation Extraction in Biomedical using BI-LSTM-CRF model + Bert Embedding + Keras + Tensorflow**
 
 ## <img src="https://img.icons8.com/external-smashingstocks-flat-smashing-stocks/64/000000/external-manager-hotel-smashingstocks-flat-smashing-stocks-2.png"/> **`Slamet Riyanto S.Kom., M.M.S.I.`**
 
@@ -14,7 +14,9 @@
 <img src="RE-DATASET.png" width="4803">
 
 ## Visualization
-<img src="results/uji%207-12/loss_acc.png" width="432">
+<p align="center">
+  <img src="results/uji%207-12/loss_acc.png" width="432">
+</p>
 
 ## Predict
 ```yaml
