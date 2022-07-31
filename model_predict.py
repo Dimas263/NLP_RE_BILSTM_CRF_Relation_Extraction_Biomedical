@@ -8,7 +8,7 @@ from utils.att import Attention
 
 # Load the best trained model
 model = load_model(
-  "results/uji 7-12/per-rel-11-0.7739.hdf5",
+  "/content/drive/MyDrive/Rearch_Dimas/BILSTM_CRF_RE/results/uji 7-12/per-rel-11-0.7739.hdf5", 
   custom_objects={"Attention": Attention})
 
 # Example Statements and Preprocessing
@@ -25,7 +25,7 @@ x_train = np.array([vec])
 predicted = model.predict(x_train)
 y = np.argmax(predicted[0])
 
-with open('input/rel_dict.json', 'r', encoding='utf-8') as f:
+with open('/content/drive/MyDrive/Rearch_Dimas/BILSTM_CRF_RE/input/rel_dict.json', 'r', encoding='utf-8') as f:
     rel_dict = json.load(f)
 
 id_rel_dict = {v:k for k,v in rel_dict.items()}

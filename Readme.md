@@ -6,11 +6,9 @@
 
 ## <img src="https://img.icons8.com/external-fauzidea-flat-fauzidea/64/undefined/external-man-avatar-avatar-fauzidea-flat-fauzidea.png"/> **`Dimas Dwi Putra`**
 
-## Results
-<img src="front-end.png" width="1345">
 
 ## Architecture
-<img src="RE-BILSTM-CRF%20Architecture.png" width="16384">
+<img src="RE-BILSTM-CRF%20Architecture.png" width="9287">
 
 ## Dataset
 <img src="RE-DATASET.png" width="4803">
@@ -21,15 +19,7 @@
 ## Eval
 | Entities              | precision | recall | f1-score | support | processor | ram  | model | batch size | epochs | length | embedding | Uji | excecution time |
 | --------------------- | --------- | ------ | -------- | ------- | --------- | ---- | ----- | ---------- | ------ | ------ | --------- | --- | --------------- |
-| Negative              | 0.78      | 0.72   | 0.75     | 118     | cpu       | high | 5     | 8          | 11/100 | 512    | 128       | 11  | 5.15.15         |
-| Cause Of Disease      | 0.68      | 0.73   | 0.70     | 37      |           |      |       |            |        |        |           |     |                 |
-| Treatment Of Diesease | 0.80      | 0.92   | 0.86     | 98      |           |      |       |            |        |        |           |     |                 |
-| Association           | 0.00      | 0.00   | 0.00     | 8       |           |      |       |            |        |        |           |     |                 |
-| micro avg             |           |        | 0.77     | 261     |           |      |       |            |        |        |           |     |                 |
-| macro avg             | 0.56      | 0.59   | 0.58     | 261     |           |      |       |            |        |        |           |     |                 |
-| weighted avg          | 0.75      | 0.77   | 0.76     | 261     |           |      |       |            |        |        |           |     |                 |
-| F-1 Scores            |           |        | 77,39%   |         |           |      |       |            |        |        |           |     |                 |
-| Negative              | 0.76      | 0.78   | 0.77     | 118     | cpu       | high | 6     | 8          | 71/100 | 512    | 128       | 12  |                 |
+| Negative              | 0.76      | 0.78   | 0.77     | 118     | cpu       | high | 6     | 8          | 71/100 | 512    | 128       | 12  | 5.15.15         |
 | Cause Of Disease      | 0.68      | 0.76   | 0.72     | 37      |           |      |       |            |        |        |           |     |                 |
 | Treatment Of Diesease | 0.86      | 0.85   | 0.85     | 98      |           |      |       |            |        |        |           |     |                 |
 | Association           | 0.50      | 0.12   | 0.20     | 8       |           |      |       |            |        |        |           |     |                 |
@@ -37,6 +27,7 @@
 | macro avg             | 0.70      | 0.63   | 0.63     | 261     |           |      |       |            |        |        |           |     |                 |
 | weighted avg          | 0.78      | 0.78   | 0.78     | 261     |           |      |       |            |        |        |           |     |                 |
 | F-1 Scores            |           |        | 78,16%   |         |           |      |       |            |        |        |           |     |                 |
+### More Eval on [Model Report.xlsx](Model%20Report.xlsx)
 
 ## Predict
 ```yaml
@@ -44,24 +35,51 @@ original: green tea#skin papillomas#Inhibitory effect of green tea on the growth
 Predict: Treatment_of_disease
 ```
 
+## Requirements
+install from [requirements.txt](requirements.txt)
+```yaml
+python==3.6
+pandas==0.23.4
+keras==2.3.1
+termcolor==1.1.0
+six==1.16.0
+tensorflow==1.13.1
+numpy==1.16.2
+matplotlib==2.2.4
+scikit-learn==0.24.2
+h5py==2.10.0
+git+https://www.github.com/keras-team/keras-contrib.git
+```
+
+# Model Output
+save model on [results](results) directory
+```yaml
+results/
+  uji 1/
+      .hdf5
+  ...
+  uji 13
+      .hdf5
+```
+
 # **Other Content**
 
 ### **Websites Prediction**
-#### [Django Websites Prediction For NER dan RE](https://github.com/Dimas263/Django-Websites_NER_RE)
+#### [1. Django Websites Prediction For NER dan RE](https://github.com/Dimas263/Django-Websites_NER_RE)
 
 <br>
 
 ### **Named Entity Recognition (NER)**
-#### [NLP_NER_Dataset_Biomedical_Plant-Disease_Corpus](https://github.com/Dimas263/NLP_NER_Dataset_Biomedical_Plant-Disease_Corpus)
-#### [NLP_NER_CRF_Named_Entity_Recognition](https://github.com/Dimas263/NLP_NER_CRF_Named_Entity_Recognition)
-#### [NLP_NER_BILSTM_Named_Entity_Recognition](https://github.com/Dimas263/NLP_NER_BILSTM_Named_Entity_Recognition)
-#### [NLP_NER_BERT_Named_Entity_Recognition](https://github.com/Dimas263/NLP_NER_BERT_Named_Entity_Recognition)
-#### [NLP_NER_BILSTM_CRF_Named_Entity_Recognition](https://github.com/Dimas263/NLP_NER_BILSTM_CRF_Named_Entity_Recognition)
-#### [NLP_NER_BERT_BILSTM_CRF_Named_Entity_Recognition](https://github.com/Dimas263/NLP_NER_BERT_BILSTM_CRF_Named_Entity_Recognition)
+#### [1. NER Dataset Biomedical Plant-Disease Corpus](https://github.com/Dimas263/NLP_NER_Dataset_Biomedical_Plant-Disease_Corpus)
+#### [2. NER CRF Named Entity Recognition](https://github.com/Dimas263/NLP_NER_CRF_Named_Entity_Recognition)
+#### [3. NER BiLSTM Named Entity Recognition](https://github.com/Dimas263/NLP_NER_BILSTM_Named_Entity_Recognition)
+#### [4. NER BERT Named Entity Recognition](https://github.com/Dimas263/NLP_NER_BERT_Named_Entity_Recognition)
+#### [5. NER BiLSTM CRF Named Entity Recognition](https://github.com/Dimas263/NLP_NER_BILSTM_CRF_Named_Entity_Recognition)
+#### [6. NER BERT BiLSTM CRF Named Entity Recognition](https://github.com/Dimas263/NLP_NER_BERT_BILSTM_CRF_Named_Entity_Recognition)
 
 <br>
 
 ### **Relation Extraction (NER)**
-#### [NLP_RE_Dataset_Biomedical_Plant-Disease_Corpus](https://github.com/Dimas263/NLP_RE_Dataset_Biomedical_Plant-Disease_Corpus)
-#### [NLP_RE_BERT_Relation_Extraction_Biomedical](https://github.com/Dimas263/NLP_RE_BERT_Relation_Extraction_Biomedical)
-#### [NLP_RE_BILSTM_CRF_Relation_Extraction_Biomedical](https://github.com/Dimas263/NLP_RE_BILSTM_CRF_Relation_Extraction_Biomedical)
+#### [1. RE Dataset Biomedical Plant-Disease Corpus](https://github.com/Dimas263/NLP_RE_Dataset_Biomedical_Plant-Disease_Corpus)
+#### [2. RE BERT Relation Extraction Biomedical](https://github.com/Dimas263/NLP_RE_BERT_Relation_Extraction_Biomedical)
+#### [3. RE BiLSTM CRF Relation Extraction Biomedical](https://github.com/Dimas263/NLP_RE_BILSTM_CRF_Relation_Extraction_Biomedical)
