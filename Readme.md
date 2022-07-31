@@ -16,6 +16,12 @@
 ## Visualization
 <img src="results/uji%207-12/loss_acc.png" width="432">
 
+## Predict
+```yaml
+original: green tea#skin papillomas#Inhibitory effect of green tea on the growth of established skin papillomas in mice.
+Predict: Treatment_of_disease
+```
+
 ## Eval
 | Entities              | precision | recall | f1-score | support | processor | ram  | model | batch size | epochs | length | embedding | Uji | excecution time |
 | --------------------- | --------- | ------ | -------- | ------- | --------- | ---- | ----- | ---------- | ------ | ------ | --------- | --- | --------------- |
@@ -28,12 +34,6 @@
 | weighted avg          | 0.78      | 0.78   | 0.78     | 261     |           |      |       |            |        |        |           |     |                 |
 | F-1 Scores            |           |        | 78,16%   |         |           |      |       |            |        |        |           |     |                 |
 ### More Eval on [Model Report.xlsx](Model%20Report.xlsx)
-
-## Predict
-```yaml
-original: green tea#skin papillomas#Inhibitory effect of green tea on the growth of established skin papillomas in mice.
-Predict: Treatment_of_disease
-```
 
 ## Requirements
 install from [requirements.txt](requirements.txt)
@@ -67,7 +67,6 @@ results/
 ### **Websites Prediction**
 #### [1. Django Websites Prediction For NER dan RE](https://github.com/Dimas263/Django-Websites_NER_RE)
 
-<br>
 
 ### **Named Entity Recognition (NER)**
 #### [1. NER Dataset Biomedical Plant-Disease Corpus](https://github.com/Dimas263/NLP_NER_Dataset_Biomedical_Plant-Disease_Corpus)
@@ -77,7 +76,6 @@ results/
 #### [5. NER BiLSTM CRF Named Entity Recognition](https://github.com/Dimas263/NLP_NER_BILSTM_CRF_Named_Entity_Recognition)
 #### [6. NER BERT BiLSTM CRF Named Entity Recognition](https://github.com/Dimas263/NLP_NER_BERT_BILSTM_CRF_Named_Entity_Recognition)
 
-<br>
 
 ### **Relation Extraction (NER)**
 #### [1. RE Dataset Biomedical Plant-Disease Corpus](https://github.com/Dimas263/NLP_RE_Dataset_Biomedical_Plant-Disease_Corpus)
