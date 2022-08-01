@@ -6,12 +6,11 @@
 
 ## <img src="https://img.icons8.com/external-fauzidea-flat-fauzidea/64/undefined/external-man-avatar-avatar-fauzidea-flat-fauzidea.png"/> **`Dimas Dwi Putra`**
 
-
 ## Architecture
-<img src="RE-BILSTM-CRF.png" width="9287">
+<p align="center"><img src="RE-BILSTM-CRF.png" width="9287"></p>
 
-## Dataset
-<img src="RE-DATASET.png" width="4803">
+## Dataset<br>[View Dataset .txt](input/)
+<p align="center"><img src="RE-DATASET.png" width="4803"></p>
 
 ## Visualization
 <p align="center">
@@ -24,7 +23,7 @@ original: green tea#skin papillomas#Inhibitory effect of green tea on the growth
 Predict: Treatment_of_disease
 ```
 
-## Eval
+## Eval<br>[View Model Report.xlsx](Model%20Report.xlsx)
 | Entities              | precision | recall | f1-score | support | processor | ram  | model | batch size | epochs | length | embedding | Uji | excecution time |
 | --------------------- | --------- | ------ | -------- | ------- | --------- | ---- | ----- | ---------- | ------ | ------ | --------- | --- | --------------- |
 | Negative              | 0.76      | 0.78   | 0.77     | 118     | cpu       | high | 6     | 8          | 71/100 | 512    | 128       | 12  | 5.15.15         |
@@ -35,7 +34,6 @@ Predict: Treatment_of_disease
 | macro avg             | 0.70      | 0.63   | 0.63     | 261     |           |      |       |            |        |        |           |     |                 |
 | weighted avg          | 0.78      | 0.78   | 0.78     | 261     |           |      |       |            |        |        |           |     |                 |
 | F-1 Scores            |           |        | 78,16%   |         |           |      |       |            |        |        |           |     |                 |
-### More Eval on [Model Report.xlsx](Model%20Report.xlsx)
 
 ## Requirements
 install from [requirements.txt](requirements.txt)
@@ -53,15 +51,11 @@ h5py==2.10.0
 git+https://www.github.com/keras-team/keras-contrib.git
 ```
 
-# Model Output
-save model on [results](results) directory
+# Model Output<br>[View Model Output Directory](results/)
+create model using keras and tensorflow [.hdf5](results/)
 ```yaml
 results/
-  uji 1/
-      .hdf5
-  ...
-  uji 13
-      .hdf5
+  uji/.hdf5
 ```
 
 # **Other Content**
@@ -79,7 +73,7 @@ results/
 #### [6. NER BERT BiLSTM CRF Named Entity Recognition](https://github.com/Dimas263/NLP_NER_BERT_BILSTM_CRF_Named_Entity_Recognition)
 
 
-### **Relation Extraction (NER)**
+### **Relation Extraction (RE)**
 #### [1. RE Dataset Biomedical Plant-Disease Corpus](https://github.com/Dimas263/NLP_RE_Dataset_Biomedical_Plant-Disease_Corpus)
 #### [2. RE BERT Relation Extraction Biomedical](https://github.com/Dimas263/NLP_RE_BERT_Relation_Extraction_Biomedical)
 #### [3. RE BiLSTM CRF Relation Extraction Biomedical](https://github.com/Dimas263/NLP_RE_BILSTM_CRF_Relation_Extraction_Biomedical)
