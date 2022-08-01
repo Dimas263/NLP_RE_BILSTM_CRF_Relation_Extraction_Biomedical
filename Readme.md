@@ -12,16 +12,61 @@
 ## Dataset<br>[View Dataset .txt](input/)
 <p align="center"><img src="RE-DATASET.png" width="4803"></p>
 
+#### Dictionary .json
+```yaml
+{"Negative": 0, "Cause_of_disease": 1, "Treatment_of_disease": 2, "Association": 3}
+```
+
+#### Train Dataset .txt [View Mode](input/)
+```yaml
+2 Lonicera caerulaea berry$solid tumors$The antioxidant response induced by ######################## extracts in animals bearing experimental ############ . 
+1 tobacco$cancer$Targeted smoking prevention and cessation interventions are needed for ###### survivors, especially those diagnosed with a ####### -related ###### . 
+0 green tea$pneumonia$OBJECTIVE: We examined the association between ######### consumption and death from ######### in humans. 
+...
+```
+
+#### Test Dataset .txt [View Mode](input/)
+```yaml
+1 coffee$addiction$The consumption of ###### is a self-reinforcing behavior, and caffeine dependence and ######### are common. 
+0 coffee$coronary disease$Initial trials showing ###### 's association with ################ and myocardial infarction have been difficult to reproduce and have many confounding variables. 
+3 coffee$coronary heart disease$BACKGROUND: For many years, an association between ###### consumption and the risk of ###################### has been suspected.
+...
+```
+
+## Source Code
+Utils <br>[View Directory](utils/)
+```yaml
+- args.py
+- att.py
+- crf.py
+- extract_feature.py
+- graph.py
+- load_data.py
+- modeling.py
+- optimization.py
+- tokenization.py
+```
+
+Notebook<br>
+- [BILSTM-CRF-RE.ipynb](BILSTM-CRF-RE.ipynb)<br>
+- [BILSTM-CRF-ATTENTION-FC-RE](BILSTM-CRF-ATTENTION-FC-RE.ipynb)
+
 ## Visualization
 <p align="center">
   <img src="results/uji%207-12/loss_acc.png" width="432">
 </p>
 
-## Predict
+## Predict<br>[View More Predict Results .xlsx](https://github.com/Dimas263/Django-Websites_NER_RE/blob/master/Data%20kalimat.xlsx)
 ```yaml
 original: green tea#skin papillomas#Inhibitory effect of green tea on the growth of established skin papillomas in mice.
 Predict: Treatment_of_disease
 ```
+| sentences                                                                                                                                                                                                                                                                                                                                                                           | status  | plant  | disease | relation      |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ------ | ------- | ------------- |
+| Public awareness about tobacco -related oral cancer is low at present, and new approaches to this problem should include education in the schools on oral cancer, formulation of legislative action to ban the sale of tobacco near schools and colleges, and imposition of societal "barriers" that would make the nonchewing of tobacco socially more acceptable than chewing it. | success | detect | detect  | make relation |
+| the mechanism by which magnesium affects digitalis induced arrhythmias was studied in dogs with and without beta receptor                                                                                                                                                                                                                                                           | success | detect | detect  | make relation |
+| these observations indicate that oral administration of green tea i p a polyphenol fraction or i p epigallocatechin gallate inhibited the growth and caused regression established experimentally induced skin papillomas                                                                                                                                                           | success | detect | detect  | make relation |
+...
 
 ## Eval<br>[View Model Report.xlsx](Model%20Report.xlsx)
 | Entities              | precision | recall | f1-score | support | processor | ram  | model | batch size | epochs | length | embedding | Uji | excecution time |
