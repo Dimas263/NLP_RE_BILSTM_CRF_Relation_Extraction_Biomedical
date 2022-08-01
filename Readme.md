@@ -17,7 +17,7 @@
 {"Negative": 0, "Cause_of_disease": 1, "Treatment_of_disease": 2, "Association": 3}
 ```
 
-#### Train Dataset .txt [View Mode](input/)
+#### Train Dataset .txt [View Directory](input/)
 ```yaml
 2 Lonicera caerulaea berry$solid tumors$The antioxidant response induced by ######################## extracts in animals bearing experimental ############ . 
 1 tobacco$cancer$Targeted smoking prevention and cessation interventions are needed for ###### survivors, especially those diagnosed with a ####### -related ###### . 
@@ -25,7 +25,7 @@
 ...
 ```
 
-#### Test Dataset .txt [View Mode](input/)
+#### Test Dataset .txt [View Directory](input/)
 ```yaml
 1 coffee$addiction$The consumption of ###### is a self-reinforcing behavior, and caffeine dependence and ######### are common. 
 0 coffee$coronary disease$Initial trials showing ###### 's association with ################ and myocardial infarction have been difficult to reproduce and have many confounding variables. 
